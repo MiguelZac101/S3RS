@@ -9,7 +9,8 @@ use Symfony\Component\HttpFoundation\Request;
 class UserController extends Controller
 {
     public function loginAction(Request $request){
-        echo "Accion login";
-        die();
+        return $this->render('AppBundle:User:login.html.twig',array(
+            "titulo" => "prueba"
+        ));
     }
 }

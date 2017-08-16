@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {% block title %} S3 RED SOCIAL {% endblock %}
+        </title>
+        {% block stylesheets %}
+            <!-- Inclluir estilos CSS -->
+        {% endblock %}
+        {% block javascripts %}
+            <!-- Inclluir estilos CSS -->
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <h1>SOCIAL NETWORK</h1>
+        </header>
+        <section id="content">
+            {% block content %}
+                Content default
+            {% endblock %}
+        </section>
+        <footer>
+            <hr/>
+            <p>Desarrollar una red social</p>
+        </footer>
+    </body>
+</html>
