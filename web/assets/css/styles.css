@@ -1,10 +1,17 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 18/08/2017, 04:58:50 PM
-    Author     : miguel
-*/
+/*GENERALES*/
+body{
+    background: #eee;
+}
 
+/*REGISTRO*/
+.box-form{
+    background-color: white;
+    border: 1px solic #ccc;
+    padding: 20px;    
+    margin:0px auto;
+    float:none;
+}
+
+.box-form input{
+    margin-bottom: 10px;
+}
