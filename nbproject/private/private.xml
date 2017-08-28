@@ -5,6 +5,8 @@
         <group>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Form/RegisterType.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/UserController.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/BackendBundle/Entity/User.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
         </group>
     </open-files>
 </project-private>
