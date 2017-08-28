@@ -5,6 +5,8 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+
 use Symfony\Component\HttpFoundation\Session\Session;//session
 
 use BackendBundle\Entity\User; //entidad
@@ -19,8 +21,14 @@ class UserController extends Controller
     }
     
     public function loginAction(Request $request){
+        
+        $authenticationUtils = $this->get('security.authentication_utils');
+        $error = $authenticationUtils->getLastAuthenticationError();
+        $lastUsername = $authenticationUtils->getLastUsername();
+        
         return $this->render('AppBundle:User:login.html.twig',array(
-            "titulo" => "prueba"
+            'last_username' => $lastUsername,
+            'error' => $error
         ));
     }
     
@@ -71,4 +79,24 @@ class UserController extends Controller
             "form" => $form->createView()
         ));
     }
+    
+    public function nickTestAction(Request $request){
+        $nick = $request->get("nick");
+        
+        $em = $this->getDoctrine()->getManager();
+        $user_repo = $em->getRepository("BackendBundle:User");
+        $user_isset = $user_repo->findOneBy(array("nick" => $nick));
+        
+        $result = "used";
+        
+        if(count($user_isset) >= 1 && is_object($user_isset) ){
+            $result = "used";
+        }else{
+            $result = "unused";
+        }
+        
+        return new Response($result);
+        
+    }
+    
 }
