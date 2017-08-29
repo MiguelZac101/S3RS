@@ -8,9 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 class PublicationController extends Controller{
     
-    public function indexAction(){
-        echo "indexAction -> PublicationController";
-        die();
+    public function indexAction(Request $request){
+        return $this->render('AppBundle:Publication:home.html.twig');
     }
     
 }
