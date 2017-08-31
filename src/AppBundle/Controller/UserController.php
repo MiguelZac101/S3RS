@@ -108,4 +108,8 @@ class UserController extends Controller
         
     }
     
+    public function editUserAction(Request $request){
+        return $this->render('AppBundle:User:edit.html.twig');
+    }
+    
 }

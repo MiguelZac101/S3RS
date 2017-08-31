@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Publication/home.html.twig</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Form/RegisterType.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/User/login.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/User/register.html.twig</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/UserController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/BackendBundle/Entity/User.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/user.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/js/custom/nick-test.js</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/PublicationController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
         </group>
     </open-files>
