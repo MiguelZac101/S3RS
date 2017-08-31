@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Session\Session;//session
 
 use BackendBundle\Entity\User; //entidad
 use AppBundle\Form\RegisterType; //formulario
+use AppBundle\Form\UserType;
 
 class UserController extends Controller
 {
@@ -108,8 +109,13 @@ class UserController extends Controller
         
     }
     
-    public function editUserAction(Request $request){
-        return $this->render('AppBundle:User:edit.html.twig');
+    public function editUserAction(Request $request){       
+        $user = $this->getUser();
+        $form = $this->createForm(UserType::class, $user);
+        
+        return $this->render('AppBundle:User:edit.html.twig',array(
+            'form' => $form->createView()
+        ));
     }
     
 }

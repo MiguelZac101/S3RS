@@ -11,6 +11,9 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+
 class UserType extends AbstractType
 {
     /**
@@ -37,7 +40,7 @@ class UserType extends AbstractType
                 'label' => 'Nick',
                 'required' => 'required',
                 'attr' => array(
-                    'class' => 'form-nick form-control nick-input'
+                    'class' => 'form-nick form-control'
                 )
             ))
             ->add('email',EmailType::class,array(
@@ -47,14 +50,22 @@ class UserType extends AbstractType
                     'class' => 'form-email form-control'
                 )
             ))
-            ->add('password',PasswordType::class,array(
-                'label' => 'Contraseña',
-                'required' => 'required',
+            ->add('bio',TextAreaType::class,array(
+                'label' => 'biografia',
+                'required' => 'false',
                 'attr' => array(
-                    'class' => 'form-password form-control'
+                    'class' => 'form-bio form-control'
                 )
-            ))            
-            ->add('Registrarse', SubmitType::class, array(
+            )) 
+            ->add('image',FileType::class,array(
+                'label' => 'Foto',
+                'required' => false,
+                'data_class' => null, // lo trata como un campo independiente, no lo setea automaticamente y permite manipularlo manualmente
+                'attr' => array(
+                    'class' => 'form-image form-control'
+                )
+            ))
+            ->add('Actualizar', SubmitType::class, array(
                 "attr" => array(
                     "class" => "form-submit btn btn-success"
                 )
@@ -70,14 +81,5 @@ class UserType extends AbstractType
             'data_class' => 'BackendBundle\Entity\User'
         ));
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getBlockPrefix()
-    {
-        return 'backendbundle_user';
-    }
-
 
 }
