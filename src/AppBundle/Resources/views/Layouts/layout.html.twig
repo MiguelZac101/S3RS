@@ -30,25 +30,38 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{path("app_homepage")}}">Brand</a>
+                        <a class="navbar-brand" href="{{path('app_homepage')}}">Brand</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        {% if app.user == null %}
+                        
                         <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="{{path("login")}}">
-                                    Entrar <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{path("register")}}">
-                                    Registro
-                                </a>
-                            </li>                            
+                            {% if app.user == null %}
+                                <li class="active">
+                                    <a href="{{path("login")}}">
+                                        Entrar <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{path('register')}}">
+                                        Registro
+                                    </a>
+                                </li>    
+                            {% else %}
+                                <li>
+                                    <a href="{{path('app_homepage')}}">
+                                        Home
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a href="{{path('user_list')}}">
+                                        Gente
+                                    </a>
+                                </li> 
+                            {% endif %}                        
                         </ul>
-                        {% endif %}
+                        
                         
                         {% if app.user != null %}
                             <ul class="nav navbar-nav navbar-right">

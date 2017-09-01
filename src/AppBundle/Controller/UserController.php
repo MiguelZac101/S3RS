@@ -170,4 +170,9 @@ class UserController extends Controller {
         ));
     }
 
+    public function usersAction(){
+        echo "xxx";
+        die();
+    }
+
 }
