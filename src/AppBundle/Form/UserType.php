@@ -24,7 +24,7 @@ class UserType extends AbstractType
         $builder
             ->add('name',TextType::class,array(
                 'label' => 'Nombre',
-                'required' => 'required',
+                'required' => null,
                 'attr' => array(
                     'class' => 'form-name form-control'
                 )
@@ -52,7 +52,7 @@ class UserType extends AbstractType
             ))
             ->add('bio',TextAreaType::class,array(
                 'label' => 'biografia',
-                'required' => 'false',
+                'required' => false,
                 'attr' => array(
                     'class' => 'form-bio form-control'
                 )

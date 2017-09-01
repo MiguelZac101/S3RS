@@ -156,7 +156,7 @@ class UserController extends Controller {
                     $status = "El usuario ya existe !!";
                 }
             } else {
-                $status = "No te has registrado correctamente!!";
+                $status = "!(isValid) ";
             }
 
             $this->session->getFlashBag()->add("status", $status);

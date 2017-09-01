@@ -11,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class UserType extends AbstractType
+class RegisterType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -21,7 +21,7 @@ class UserType extends AbstractType
         $builder
             ->add('name',TextType::class,array(
                 'label' => 'Nombre',
-                'required' => 'required',
+                'required' => false,
                 'attr' => array(
                     'class' => 'form-name form-control'
                 )
