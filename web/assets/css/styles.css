@@ -21,7 +21,7 @@ body{
 }
 
 /*REGISTRO*/
-.box-form{
+.box-form,.box-default{
     background-color: white;
     border: 1px solic #ccc;
     padding: 20px;    
@@ -31,4 +31,20 @@ body{
 
 .box-form input{
     margin-bottom: 10px;
+}
+
+/*gente*/
+.user-item .avatar{
+    background: #eee;
+    border-radius: 550px;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    float:left;
+    margin-right: 10px;
+}
+
+.user-item .avatar img{
+    height: 100%;
+    text-align: center;
 }
