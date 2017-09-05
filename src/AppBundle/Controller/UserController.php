@@ -180,7 +180,7 @@ class UserController extends Controller {
         $pagination = $paginator->paginate(
                     $query,
                     $request->query->getInt('page',1),
-                    2
+                    3
                 );  
         
         return $this->render('AppBundle:User:users.html.twig',array('pagination'=>$pagination));
