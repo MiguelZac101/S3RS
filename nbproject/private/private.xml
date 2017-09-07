@@ -6,11 +6,13 @@
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/app/config/config.yml</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/js/custom/users.js</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/User/users.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/following.yml</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/UserController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/css/styles.css</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/User/edit.html.twig</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/BackendBundle/Entity/User.php</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/FollowingController.php</file>
         </group>
     </open-files>
 </project-private>
