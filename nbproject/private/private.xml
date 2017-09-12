@@ -4,11 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Publication/home.html.twig</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/BackendBundle/Entity/Following.php</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Twig/FollowingExtension.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Form/RegisterType.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Form/PublicationType.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/UserController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/css/styles.css</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/BackendBundle/Entity/User.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Form/UserType.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/PublicationController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/FollowingController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
