@@ -118,7 +118,7 @@ class PublicationController extends Controller{
         $pagination = $paginator->paginate(
                 $query,
                 $request->query->getInt('page',1),
-                5
+                7
                 );
         
         return $pagination;
