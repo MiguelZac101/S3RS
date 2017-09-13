@@ -5,8 +5,32 @@
             <h1 class="box-header">Timeline</h1>            
             <div class=""box-content>
                 {% for publication in pagination %}
-                    {{publication.text}}
-                    <hr/>
+                    <div class="col-lg-12 publication-item">
+                        
+                        <div class="avatar">
+                        {% if publication.user.image ==null %}
+                            <img src="{{ asset('assets/images/default.png') }}"/>
+                        {% else %}
+                            <img src="{{ asset('uploads/users/'~publication.user.image) }}"/>
+                        {% endif %}
+                        </div>
+                        <div class="publication-item-content">
+                            <p>
+                                <a href="#" class="pub-name-link">
+                                    {{publication.user.name}} {{publication.user.surname}}
+                                </a>
+                                -
+                                {{publication.user.nick}}
+                                -
+                                <span class="pub-date">
+                                    {{publication.createdAt|date('d-m-Y')}}
+                                </span>
+                            </p>
+                            {{publication.text}}
+                        </div>
+                        <div class="clearfix"></div>
+                        
+                    </div>
                 {% endfor %}
                 <div class="navigation">
                     {{ knp_pagination_render(pagination) }}
