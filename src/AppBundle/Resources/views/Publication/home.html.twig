@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="container">
         <div id="timeline" class="col-lg-7 box-default timeline pull-left">
             <h1 class="box-header">Timeline</h1>            
@@ -35,6 +36,10 @@
                             <p>
                                 {{publication.text}}
                             </p>
+                            
+                            {% if( publication.user.id is defined ) and ( app.user.id == publication.user.id ) %}
+                                <span data-id="{{publication.id}}" class="btn-delete-pub" >borrar</span>
+                            {% endif %}
                             
                             {% if( publication.document is defined ) and (publication.document != null) %}
                                 <a href="{{asset('uploads/publications/documents/'~publication.document)}}" class="btn-doc glyphincon glyphincon-save" aria-hidden="true" target="_blank">
