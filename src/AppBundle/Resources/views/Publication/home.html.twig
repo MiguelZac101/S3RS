@@ -32,11 +32,27 @@
                                     {{publication.createdAt|long_time}}
                                 </span>
                             </p>
-                            {{publication.text}}
+                            <p>
+                                {{publication.text}}
+                            </p>
+                            
+                            {% if( publication.document is defined ) and (publication.document != null) %}
+                                <a href="{{asset('uploads/publications/documents/'~publication.document)}}" class="btn-doc glyphincon glyphincon-save" aria-hidden="true" target="_blank">
+                                    download document
+                                </a>
+                            {% endif %}    
+                            
+                            {% if( publication.image is defined ) and (publication.image != null) %}
+                                <span class="btn-img">imagen</span>
+                                <div class="clearfix"></div>
+                                <div class="pub-image">
+                                    <img src="{{asset('uploads/publications/images/'~publication.image)}}"/>
+                                </div>
+                            {% endif %}  
+                            
                         </div>
-                        <div class="clearfix"></div>
-                        
                     </div>
+                    <div class="clearfix"></div>
                 {% endfor %}
                 <div class="navigation">
                     {{ knp_pagination_render(pagination) }}

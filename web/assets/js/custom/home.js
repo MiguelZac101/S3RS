@@ -31,5 +31,7 @@ $(document).ready(function () {
 });
 
 function buttons() {
-    
+    $(".btn-img").unbind("click").click(function(){
+       $(this).parent().find('.pub-image').fadeToggle(); 
+    });
 }

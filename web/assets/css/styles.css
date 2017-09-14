@@ -112,3 +112,20 @@ body{
 .pub-date{
     color:gray;
 }
+.pub-image{
+    display:none;
+    trtansition: all 300ms;
+}
+
+.pub-image img{
+    width:100%;
+    text-align: center;
+    display:block;
+    margin: 0px auto;    
+}
+
+.publication .glyphicon{
+    margin-right: 7px;
+    cursor:pointer;
+    color: #444 !important;
+}
