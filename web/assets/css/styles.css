@@ -129,3 +129,17 @@ body{
     cursor:pointer;
     color: #444 !important;
 }
+
+.like{
+    font-size: 25px;
+    margin-top: -45px;
+}
+
+.like .btn-like:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.like .active{
+    color:red;
+}

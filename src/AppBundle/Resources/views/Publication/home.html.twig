@@ -38,23 +38,31 @@
                             </p>
                             
                             {% if( publication.user.id is defined ) and ( app.user.id == publication.user.id ) %}
-                                <span data-id="{{publication.id}}" class="btn-delete-pub" >borrar</span>
+                                <span data-id="{{publication.id}}" class="btn-delete-pub glyphicon glyphicon-trash" aria-hidden="true" ></span>
                             {% endif %}
                             
                             {% if( publication.document is defined ) and (publication.document != null) %}
-                                <a href="{{asset('uploads/publications/documents/'~publication.document)}}" class="btn-doc glyphincon glyphincon-save" aria-hidden="true" target="_blank">
-                                    download document
+                                <a href="{{asset('uploads/publications/documents/'~publication.document)}}" class="btn-doc glyphicon glyphicon-save" aria-hidden="true" target="_blank">                                    
                                 </a>
                             {% endif %}    
                             
                             {% if( publication.image is defined ) and (publication.image != null) %}
-                                <span class="btn-img">imagen</span>
+                                <span class="btn-img glyphicon glyphicon-picture" aria-hidden="true"></span>
                                 <div class="clearfix"></div>
                                 <div class="pub-image">
                                     <img src="{{asset('uploads/publications/images/'~publication.image)}}"/>
                                 </div>
-                            {% endif %}  
+                            {% endif %} 
                             
+                            <div class="pull-right like">
+                                <span data-id="{{publication.id}}"
+                                      class="btn-like glyphicon glyphicon-heart-empty"
+                                      aria-hidden="true"
+                                      data-toggle="tooltip"
+                                      data-placement="bottom"
+                                      title="Me gusta">
+                                </span>
+                            </div>                            
                         </div>
                     </div>
                     <div class="clearfix"></div>
