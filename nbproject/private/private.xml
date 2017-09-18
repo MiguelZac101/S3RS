@@ -4,8 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Publication/home.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/LikeController.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Twig/LikedExtension.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/User/users.html.twig</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/js/custom/home.js</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Twig/FollowingExtension.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/UserController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/PublicationController.php</file>
             <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/FollowingController.php</file>

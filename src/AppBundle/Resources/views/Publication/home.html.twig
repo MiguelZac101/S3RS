@@ -56,7 +56,11 @@
                             
                             <div class="pull-right like">
                                 <span data-id="{{publication.id}}"
-                                      class="btn-like glyphicon glyphicon-heart-empty"
+                                      class="
+                                      {% if app.user|liked(publication) == true %}
+                                          hidden
+                                      {% endif %}
+                                      btn-like glyphicon glyphicon-heart-empty"
                                       aria-hidden="true"
                                       data-toggle="tooltip"
                                       data-placement="bottom"
@@ -64,7 +68,11 @@
                                 </span>
                                       
                                 <span data-id="{{publication.id}}"
-                                      class="hidden btn-unlike active glyphicon glyphicon-heart-empty"
+                                      class="
+                                      {% if app.user|liked(publication) == false %}
+                                          hidden
+                                      {% endif %}
+                                      btn-unlike active glyphicon glyphicon-heart-empty"
                                       aria-hidden="true"
                                       data-toggle="tooltip"
                                       data-placement="bottom"
