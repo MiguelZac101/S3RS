@@ -169,3 +169,66 @@ body{
 .like .active{
     color:red;
 }
+
+/*PERFILES*/
+.profile-box{
+    padding: 20px;
+    margin: 0px auto;
+    float: none;
+}
+
+.profile-box > .avatar{
+    background: #eee;
+    border-radius:90px;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0px auto;        
+}
+
+.profile-box > .avatar img{
+    height: 100%;
+    text-align: center;
+}
+
+.profile-box .name-surname{
+    margin: 0px auto;
+    text-align: center;
+}
+
+.profile-box .bio{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.profile-box #user_stats{
+    margin: 0px auto;
+    margin-bottom:20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 50%;
+    text-align: center;
+}
+
+.profile-box #user_stats .following-data{
+    float:left;
+}
+
+.profile-box #user_stats a{
+    color: #444;
+}
+
+.profile-box #user_stats .label-stat{
+    display: block;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left:20px;
+    text-align: center;
+}
+
+.profile-box #user_stats .number-stat{
+    font-weight: bold;
+}
