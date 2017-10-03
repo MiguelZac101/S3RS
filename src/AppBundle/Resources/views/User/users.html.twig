@@ -26,7 +26,12 @@
                             {% endif %}
                         </div>
                         <div class="user-item-content">
-                            <p>{{user.name}} {{user.surname}} - {{user.nick}}</p>
+                            <p>
+                                <a href="{{path('user_profile',{'nickname':user.nick})}}" class="user_link">
+                                    {{user.name}} {{user.surname}}
+                                </a>                                 
+                                - {{user.nick}}
+                            </p>
                             <p>{{user.bio}}</p>
                         </div>
                         

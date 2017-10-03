@@ -2,7 +2,7 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type="text/javascript" src="{{ asset('assets/js/custom/home.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/js/custom/profile.js') }}"></script>
 {% endblock %}
 
 {% block content %}
@@ -12,7 +12,7 @@
             {% if user.image ==null %}
                 <img src="{{ asset('assets/images/default.png') }}"/>
             {% else %}
-                <img src="{{ asset('uploads/users/'~publication.user.image) }}"/>
+                <img src="{{ asset('uploads/users/'~user.image) }}"/>
             {% endif %}
         </div>
         
@@ -31,7 +31,7 @@
         <div class="clearfix"></div>
 
         <div id="user_stats">
-            {% set user_stats = app.user|user_stats %}
+            {% set user_stats = user|user_stats %}
             
             <div class="following-data">
                 <a href="#">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="publication-item-content">
                         <p>
-                            <a href="#" class="pub-name-link">
+                            <a href="{{path('user_profile',{'nickname':publication.user.nick})}}" class="pub-name-link">
                                 {{publication.user.name}} {{publication.user.surname}}
                             </a>
                             -

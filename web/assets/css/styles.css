@@ -34,6 +34,11 @@ body{
 }
 
 /*gente*/
+.user_link{
+    color: black;
+    font-weight: bold;
+}
+
 .publication-item .avatar,
 .user-item .avatar{
     background: #eee;
