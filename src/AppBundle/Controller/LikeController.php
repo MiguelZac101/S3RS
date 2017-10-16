@@ -27,6 +27,10 @@ class LikeController extends Controller {
         $flush = $em->flush();
 
         if ($flush == null) {
+            //servicio notificación
+            $notification = $this->get('app.notification_service');
+            $notification->set($publication->getUser(),'like',$user->getId(),$publication->getId());
+            
             $status = 'Tegusta esta blicacion!!';
         } else {
             $status = 'No se ha podido guardar el me gusta!!';

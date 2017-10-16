@@ -76,6 +76,21 @@
                         
                         {% if app.user != null %}
                             <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="{{path('app_homepage')}}">
+                                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                        &nbsp
+                                        Mensaje privados
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{path('app_homepage')}}">
+                                        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                                        &nbsp
+                                        Notificaciones
+                                    </a>
+                                </li>
+                                
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         <div class="avatar">
