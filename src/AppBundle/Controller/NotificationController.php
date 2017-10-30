@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class NotificationController extends Controller {
     
@@ -24,5 +25,20 @@ class NotificationController extends Controller {
             'pagination' => $notifications
         ));
         
+    }
+    
+    public function countNotificationsAction(){
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();        
+        
+        $notification_repo = $em->getRepository('BackendBundle:Notification');
+        $notifications = $notification_repo->findBy(
+            array(
+                'user' => $user,
+                'readed' => 0
+            )
+        );
+        
+        return new Response(count($notifications));
     }
 }
