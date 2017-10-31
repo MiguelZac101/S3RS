@@ -2,6 +2,20 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/app/config/services.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/user.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/PublicationController.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/FollowingController.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/publication.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/notification.yml</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Publication/home.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Notification/notification_page.html.twig</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Twig/GetUserExtension.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/NotificationController.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Twig/UserStatsExtension.php</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/web/assets/js/custom/common.js</file>
+            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
+        </group>
     </open-files>
 </project-private>
