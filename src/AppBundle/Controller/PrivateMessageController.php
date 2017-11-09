@@ -11,6 +11,8 @@ use Symfony\Component\HttpFoundation\Session\Session; //session
 use BackendBundle\Entity\User; //entidad
 use BackendBundle\Entity\PrivateMessage;
 
+use AppBundle\Form\PrivateMessageType;//form
+
 class PrivateMessageController extends Controller {
 
     private $session;
@@ -20,8 +22,16 @@ class PrivateMessageController extends Controller {
     }
 
     public function indexAction(Request $request) {
+        $em = $this->getDoctrine()->getManager();
+        $user = $this->getUser();
+        
+        $private_message = new PrivateMessage();
+        $form = $this->createForm(PrivateMessageType::class, $private_message, array(
+            'empty_data' => $user
+        ));
+        
         return $this->render('AppBundle:PrivateMessage:index.html.twig', array(
-            "titulo" => "MENSAJE DE PRUEBA"
+            "form" => $form->createView()
         ));
     }
 
