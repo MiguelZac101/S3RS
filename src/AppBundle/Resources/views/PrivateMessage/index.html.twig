@@ -9,6 +9,9 @@
                 <h4>Enviar nuevo mensaje privado</h4>
                 {{form_start(form,{'action':'','method':'POST'})}}
                 {{form_end(form)}}
+                
+                <br/>
+                <a href="{{path('private_message_sended')}}" class="btn btn-warning">Ver mensajes enviados</a>
             </div>
             <div class="clearfix"></div>
         </div>

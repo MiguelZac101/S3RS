@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Notification/notification_page.html.twig</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/private_message.yml</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing.yml</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/PrivateMessage/index.html.twig</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Controller/PrivateMessageController.php</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/config/routing/notification.yml</file>
-            <file>file:/home/miguel/proyectos/html/symfony/s3redsocial/src/AppBundle/Resources/views/Layouts/layout.html.twig</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

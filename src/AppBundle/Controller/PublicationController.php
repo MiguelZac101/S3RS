@@ -115,7 +115,7 @@ class PublicationController extends Controller{
                 ->orderBy('p.id','DESC')
                 ->getQuery();
         
-        $paginator = $this->get(('knp_paginator'));
+        $paginator = $this->get('knp_paginator');
         $pagination = $paginator->paginate(
                 $query,
                 $request->query->getInt('page',1),
