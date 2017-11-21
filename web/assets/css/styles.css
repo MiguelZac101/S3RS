@@ -238,6 +238,10 @@ body{
     font-weight: bold;
 }
 
+.profile-box .buttons-following{
+    margin-top: 20px;
+}
+
 /*PRVATE MESSAGES*/
 .box-private-message input,
 .box-private-message textarea,

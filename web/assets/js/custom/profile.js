@@ -22,6 +22,7 @@ $(document).ready(function () {
 
     ias.on('ready', function (event) {
         buttons();
+        followButtons();
     });
 
     ias.on('rendered', function (event) {
@@ -76,3 +77,4 @@ function buttons() {
         
     });
 }
+
